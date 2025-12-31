@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            background-color: #888888;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            background-color: #e76161;
+            padding: 750px 250px;
+            border-radius: 50px;
+            box-shadow: 10px 10px 15px #544d4d;
+            text-align: center;
+            border: 2px solid rgb(197, 115, 115);
+            margin: 20px 10px;
+            mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+            background-image: url('I Got My New Wallpaper 😎😄.jpg');
+        }
+
+        h1 {
+            color: #32a33d;
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 50px;
+            margin: 20px 0;
+            color: #ed1515;
+        }
+
+        button {
+            margin: 25px;
+            padding: 0px 20px;
+            font-size: 70px;
+            cursor: pointer;
+            color: rgb(21, 15, 21);
+            background-color: #0dfd0d;
+            border: 2px solid #87e891;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px #4c4848;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Counter</h1>
+
+        <p id="counter">0</p>
+        <button onclick="increment()">+</button>
+        <button onclick="decrement()">-</button>
+    </div>
+    <script>
+        let count = 0;
+        const counterElement = document.getElementById("counter");
+
+        function increment() {
+            count++;
+            counterElement.textContent = count;
+        }
+
+        function decrement() {
+            count--;
+            counterElement.textContent = count;
+        }
+    </script>
+
+</body>
+
+</html>
